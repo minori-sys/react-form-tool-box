@@ -59,7 +59,7 @@ $ git clone https://github.com/minori-sys/react-form-tool-box.git
 
 ```bash
 $ yarn install
-$  yarn run dev
+$ yarn run dev
 ```
 
 あとは、ご自由にいじいじしてお使いください。
