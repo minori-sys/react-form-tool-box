@@ -58,6 +58,7 @@ $ git clone https://github.com/minori-sys/react-form-tool-box.git
 とりあえず、以下をコマンドライン上で実行して頂ければ、**すてきな☆すてきな☆**（あくまで自称）フォームが表示されるはずです。
 
 ```bash
+$ yarn install
 $  yarn run dev
 ```
 
