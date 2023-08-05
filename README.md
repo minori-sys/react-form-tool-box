@@ -120,6 +120,14 @@ $  yarn format
 だいたいの野望（ヤメれ）は意識しなくても実現できるようになっているかと思われますが、
 1点だけ。
 
+### Form部品の`React Hook Form`における`useController`の扱い
+
+はい。今回使っていません。（ドきっぱり）
+
+といいますのも、`useController`が必要なのは、`MUI`などと組み合わせた場合のみで、それらを利用しない場合、今回の作成例のように`register`使えば無問題ですので。
+
+1点だけと言いながら、もうひとつだけ。
+
 ### なぜ`Pure CSS`なのか
 `React`でのcssの選択肢は、今回採用した`Pure CSS`の他に`Styled Components`や`Emotion`など多種多様です。
 
