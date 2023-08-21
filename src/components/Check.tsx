@@ -10,17 +10,19 @@ type Props = {
 export function Check({ name, label }: Props) {
   const { register } = useFormContext();
   return (
-    <div className="checkbox">
-      <label>
-        <input
-          type="checkbox"
-          className="checkbox"
-          id={name}
-          {...register(name)}
-        />
-        {label}
-      </label>
+    <>
+      <div className="checkbox">
+        <label>
+          <input
+            type="checkbox"
+            className="checkbox"
+            id={name}
+            {...register(name)}
+          />
+          {label}
+        </label>
+      </div>
       <ErrorMessage name={name} />
-    </div>
+    </>
   );
 }
