@@ -1,7 +1,7 @@
-import Form from './components/Form';
+import { Form } from './components/Form';
 import './assets/App.scss';
 
-export default function App() {
+export function App() {
   return (
     <div className="form-area">
       <div className="title">

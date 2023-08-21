@@ -1,4 +1,4 @@
-@use "./index";
+@use './index';
 
 .textarea {
   background-color: index.$color-primary;
@@ -17,8 +17,7 @@
 }
 
 .textarea:hover,
-.textarea:focus
-{
+.textarea:focus {
   outline: none;
   border: 2px solid index.$color-primary-heavy;
   background-color: index.$color-primary;

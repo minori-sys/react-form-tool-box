@@ -1,14 +1,14 @@
 import { useForm, FormProvider, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { schema, Schema } from '../schema/schema';
-import Input from './Input';
-import Select from './Select';
-import Check from './Check';
-import Radio from './Radio';
-import { area, reply, sns } from '../data/data';
-import Textarea from './Textarea';
+import { Input } from './Input';
+import { Select } from './Select';
+import { Check } from './Check';
+import { Radio } from './Radio';
+import { area, reply } from '../data/data';
+import { Textarea } from './Textarea';
 
-export default function Form() {
+export function Form() {
   const methods = useForm<Schema>({
     resolver: zodResolver(schema)
   });
@@ -30,8 +30,8 @@ export default function Form() {
         <Select name="area" items={area} />
         <h2>返信の有無</h2>
         <Radio name="reply" items={reply} />
-        <h2>利用SNS</h2>
-        <Check name="sns" items={sns} />
+        <h2>利用規約</h2>
+        <Check name="terms" label="同意する" />
         <h2>メッセージ</h2>
         <Textarea name="message" />
         <input className="button" type="submit" />

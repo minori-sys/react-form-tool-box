@@ -1,4 +1,4 @@
-@use "./index";
+@use './index';
 
 .input {
   width: 100%;
@@ -18,10 +18,8 @@
 }
 
 .input:hover,
-.input:focus
-{
+.input:focus {
   outline: none;
   border: 2px solid index.$color-primary-heavy;
   background-color: index.$color-primary;
 }
-

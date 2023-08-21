@@ -1,10 +1,10 @@
-@use "./index";
+@use './index';
 
 .radio {
   display: flex;
   flex-wrap: wrap;
   border: none;
-  gap: .3em 2em;
+  gap: 0.3em 2em;
 }
 
 .radio input {
@@ -16,7 +16,7 @@
   align-items: center;
   position: relative;
   cursor: pointer;
-  gap: 0 .7em;
+  gap: 0 0.7em;
 }
 
 .radio label::before,

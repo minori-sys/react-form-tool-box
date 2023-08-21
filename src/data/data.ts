@@ -23,22 +23,3 @@ export const reply = [
     value: 'no'
   }
 ];
-
-export const sns = [
-  {
-    label: 'Facebook',
-    value: 'Facebook'
-  },
-  {
-    label: 'Twitter',
-    value: 'Twitter'
-  },
-  {
-    label: 'Instagram',
-    value: 'Instagram'
-  },
-  {
-    label: '利用なし',
-    value: 'none'
-  }
-];

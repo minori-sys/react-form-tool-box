@@ -13,7 +13,7 @@ type Props = {
   items: Array<SelectItem>;
 } & React.ComponentProps<'select'>;
 
-export default function Select({ name, items }: Props) {
+export function Select({ name, items }: Props) {
   const { register } = useFormContext();
   return (
     <>

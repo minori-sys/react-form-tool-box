@@ -1,10 +1,10 @@
-@use "./index";
+@use './index';
 
 .checkbox {
   display: flex;
   flex-wrap: wrap;
   border: none;
-  gap: .5em 2em;
+  gap: 0.5em 2em;
 }
 
 .checkbox input {
@@ -16,7 +16,7 @@
   align-items: center;
   position: relative;
   cursor: pointer;
-  gap: 0 .7em;
+  gap: 0 0.7em;
 }
 
 .checkbox label::before,
@@ -29,7 +29,7 @@
   width: 20px;
   height: 20px;
   border-radius: 0;
-  background-color: #FFE3E1;
+  background-color: #ffe3e1;
 }
 
 .checkbox label:hover::before,

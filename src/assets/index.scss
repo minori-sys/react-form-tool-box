@@ -1,10 +1,10 @@
-@use "sass:math";
+@use 'sass:math';
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
 
-$color-primary: #FFD1D1 !default;
-$color-primary-light: #FFE3E1 !default;
-$color-primary-heavy: #FF9494 !default;
-$color-background: #FFF5E4 !default;
+$color-primary: #ffd1d1 !default;
+$color-primary-light: #ffe3e1 !default;
+$color-primary-heavy: #ff9494 !default;
+$color-background: #fff5e4 !default;
 $default-font-size: 16;
 
 body {
@@ -66,7 +66,7 @@ h2 {
   }
   p::before {
     display: inline;
-    content: "⚠ ";
+    content: '⚠ ';
   }
 }
 

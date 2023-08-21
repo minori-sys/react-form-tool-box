@@ -7,7 +7,7 @@ type Props = {
   placeholder?: string;
 };
 
-export default function Input({ name, placeholder }: Props) {
+export function Input({ name, placeholder }: Props) {
   const { register } = useFormContext();
   return (
     <>

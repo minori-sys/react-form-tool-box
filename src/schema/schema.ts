@@ -15,6 +15,9 @@ export const schema = z
       .string()
       .min(1, 'お住まいの地域を選択してください')
       .transform((v) => Number(v)),
+    terms: z.literal(true, {
+      errorMap: () => ({ message: '規約に同意してください' })
+    }),
     reply: z.enum(['yes', 'no'], {
       errorMap: () => ({ message: '返信について選択してください' })
     }),

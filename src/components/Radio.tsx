@@ -12,7 +12,7 @@ type Props = {
   items: Array<RadioItem>;
 };
 
-export default function Radio({ name, items }: Props) {
+export function Radio({ name, items }: Props) {
   const { register } = useFormContext();
   return (
     <fieldset className="radio">

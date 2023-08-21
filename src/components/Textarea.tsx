@@ -7,7 +7,7 @@ type Props = {
   placeholder?: string;
 };
 
-export default function Textarea({ name, placeholder }: Props) {
+export function Textarea({ name, placeholder }: Props) {
   const { register } = useFormContext();
   return (
     <>
