@@ -12,10 +12,7 @@ export function Form() {
   const methods = useForm<Schema>({
     resolver: zodResolver(schema)
   });
-  const onSubmit: SubmitHandler<Schema> = (data) => console.log(data);
-
-  console.log(methods.watch('name'));
-  console.log(methods.formState.errors);
+  const onSubmit: SubmitHandler<Schema> = (data) => alert(JSON.stringify(data));
 
   return (
     <FormProvider {...methods}>
