@@ -10,6 +10,7 @@ import { Textarea } from './Textarea';
 
 export function Form() {
   const methods = useForm<Schema>({
+    mode: 'onBlur',
     resolver: zodResolver(schema)
   });
   const onSubmit: SubmitHandler<Schema> = (data) => alert(JSON.stringify(data));

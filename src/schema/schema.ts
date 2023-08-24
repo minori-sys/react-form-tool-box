@@ -1,34 +1,35 @@
 import * as z from 'zod';
+import { errorMessage } from '../data/ErrorMessage.ts';
 
 export const schema = z
   .object({
-    name: z.string().nonempty('名前を入力してください'),
+    name: z.string().nonempty(errorMessage.name_empty),
     email: z
       .string()
-      .nonempty('メールアドレスを入力してください')
-      .email('正しいメールアドレスを入力してください'),
+      .nonempty(errorMessage.email_empty)
+      .email(errorMessage.email_check),
     emailConfirm: z
       .string()
-      .nonempty('メールアドレスを入力してください')
-      .email('正しいメールアドレスを入力してください'),
+      .nonempty(errorMessage.email_empty)
+      .email(errorMessage.email_check),
     area: z
       .string()
-      .min(1, 'お住まいの地域を選択してください')
+      .min(1, errorMessage.area_empty)
       .transform((v) => Number(v)),
     terms: z.literal(true, {
-      errorMap: () => ({ message: '規約に同意してください' })
+      errorMap: () => ({ message: errorMessage.terms_check })
     }),
     reply: z.enum(['yes', 'no'], {
-      errorMap: () => ({ message: '返信について選択してください' })
+      errorMap: () => ({ message: errorMessage.reply_check })
     }),
-    message: z.string().nonempty('メッセージを入力してください')
+    message: z.string().nonempty(errorMessage.message_empty)
   })
   .superRefine(({ email, emailConfirm }, ctx) => {
     if (email !== emailConfirm) {
       ctx.addIssue({
         path: ['emailConfirm'],
         code: 'custom',
-        message: 'メールアドレスが一致していません'
+        message: errorMessage.email_confirm
       });
     }
   });
