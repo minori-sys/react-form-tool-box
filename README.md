@@ -67,7 +67,7 @@
 - 2020年登場と、比較的新参者（失礼）のくせに（失礼の上塗り）、Yupと互角の戦いを繰り広げている、てか、抜いた！？（下記資料参照）
 
 **2023年8月時点での比較**
-<img width="1392" alt="スクリーンショット 2023-08-05 19 00 37" src="https://github.com/minori-sys/react-form-tool-box/assets/31578760/1700bd30-a8bb-4c04-ad80-966dc5780ac3">
+<img width="1392" alt="スクリーンショット 2023-08-05 19 00 37" src="https://github.com/minori-sys/react-form-tool-box/assets/31578760/2822d269-9562-4d6e-af8e-b35578fbb889">
 
 どうでもいいことですが、`Zod`のimportが`z`って、シンプルでいいですよね。
 
