@@ -1,5 +1,5 @@
 import * as z from 'zod';
-import { errorMessage } from '../data/ErrorMessage.ts';
+import { errorMessage } from '../data/errorMessage.ts';
 
 export const schema = z
   .object({
@@ -20,7 +20,7 @@ export const schema = z
       errorMap: () => ({ message: errorMessage.terms_check })
     }),
     reply: z.enum(['yes', 'no'], {
-      errorMap: () => ({ message: errorMessage.reply_check })
+      errorMap: () => ({ message: errorMessage.reply_empty })
     }),
     message: z.string().nonempty(errorMessage.message_empty)
   })

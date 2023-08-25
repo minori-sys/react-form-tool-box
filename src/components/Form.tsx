@@ -13,7 +13,10 @@ export function Form() {
     mode: 'onBlur',
     resolver: zodResolver(schema)
   });
-  const onSubmit: SubmitHandler<Schema> = (data) => alert(JSON.stringify(data));
+  const onSubmit: SubmitHandler<Schema> = (data) => {
+    alert(JSON.stringify(data));
+    methods.reset();
+  };
 
   return (
     <FormProvider {...methods}>

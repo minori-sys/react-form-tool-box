@@ -5,6 +5,6 @@ export const errorMessage = {
   email_confirm: 'メールアドレスが一致していません',
   area_empty: 'お住まいの地域を選択してください',
   terms_check: '規約に同意してください',
-  reply_check: '返信について選択してください',
+  reply_empty: '返信について選択してください',
   message_empty: 'メッセージを入力してください'
 };
