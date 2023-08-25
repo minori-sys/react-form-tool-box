@@ -5,7 +5,7 @@ type Props = {
   name: string;
 };
 
-export default function ErrorMessage({ name }: Props) {
+export function ErrorMessage({ name }: Props) {
   const {
     formState: { errors }
   } = useFormContext();

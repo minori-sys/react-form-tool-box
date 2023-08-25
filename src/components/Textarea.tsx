@@ -1,5 +1,5 @@
 import { useFormContext } from 'react-hook-form';
-import ErrorMessage from './ErrorMessage';
+import { ErrorMessage } from './ErrorMessage';
 import '../assets/Textarea.scss';
 
 type Props = {
