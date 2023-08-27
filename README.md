@@ -14,12 +14,13 @@
 
 #### フォーム全体像
 
-![screencapture-localhost-5173-2023-08-28-00_17_00](https://github.com/minori-sys/react-form-tool-box/assets/31578760/81255af9-e6be-47c2-8c66-bf1ce535671a)
+![screencapture-localhost-5173-2023-08-28-00_25_43](https://github.com/minori-sys/react-form-tool-box/assets/31578760/4474da16-6455-4556-9901-aca13c4cb2f7)
 
 
 #### Validation時
 
-![screencapture-localhost-5173-2023-08-28-00_25_43](https://github.com/minori-sys/react-form-tool-box/assets/31578760/1cfd27d7-8dd3-4b9f-8d81-97171f8bc344)
+![screencapture-localhost-5173-2023-08-28-00_28_32](https://github.com/minori-sys/react-form-tool-box/assets/31578760/5f84efb2-83e6-458b-aab9-e8724c620127)
+
 
 #### 搭載Form部品
 
