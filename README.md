@@ -14,11 +14,12 @@
 
 #### フォーム全体像
 
-![screencapture-localhost-5173-2023-08-23-20_30_05](https://github.com/minori-sys/react-form-tool-box/assets/31578760/b1af9e73-6d39-478c-a0f0-2c85b86cbd24)
+![screencapture-localhost-5173-2023-08-28-00_17_00](https://github.com/minori-sys/react-form-tool-box/assets/31578760/81255af9-e6be-47c2-8c66-bf1ce535671a)
+
 
 #### Validation時
 
-![screencapture-localhost-5173-2023-08-23-20_30_23](https://github.com/minori-sys/react-form-tool-box/assets/31578760/b156ae97-14ef-44e6-a33e-0819d13df804)
+![screencapture-localhost-5173-2023-08-28-00_25_43](https://github.com/minori-sys/react-form-tool-box/assets/31578760/1cfd27d7-8dd3-4b9f-8d81-97171f8bc344)
 
 #### 搭載Form部品
 
@@ -36,7 +37,7 @@
 - めーるあどれすをもう一回入力して、違っていたら怒られるやつ
 - せれくとぼっくす選んでないと怒られるやつ
 - らじおぼたん選んでないと怒られるやつ
-- ちぇっくぼっくすにちぇっくしてないと怒られるやつ
+- ちぇっくぼっくす選んでないと怒られるやつ
 - てきすとえりあになんか書いてないと怒られるやつ
 
 ### なぜ`React Hook Form`なのか
