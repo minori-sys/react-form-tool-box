@@ -2,25 +2,33 @@ import { useFormContext } from 'react-hook-form';
 import { ErrorMessage } from './ErrorMessage';
 import '../assets/Check.scss';
 
-type Props = {
-  name: string;
+type CheckItem = {
   label: string;
+  value: string | number;
 };
 
-export function Check({ name, label }: Props) {
+type Props = {
+  name: string;
+  items: Array<CheckItem>;
+};
+
+export function Check({ name, items }: Props) {
   const { register } = useFormContext();
   return (
     <>
       <div className="checkbox">
-        <label>
-          <input
-            type="checkbox"
-            className="checkbox"
-            id={name}
-            {...register(name)}
-          />
-          {label}
-        </label>
+        {items.map((item) => (
+          <label key={item.label}>
+            <input
+              type="checkbox"
+              id={name}
+              className="checkbox"
+              {...register(name)}
+              value={item.value}
+            />
+            {item.label}
+          </label>
+        ))}
       </div>
       <ErrorMessage name={name} />
     </>

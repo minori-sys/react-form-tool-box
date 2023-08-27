@@ -16,9 +16,7 @@ export const schema = z
       .string()
       .min(1, errorMessage.area_empty)
       .transform((v) => Number(v)),
-    terms: z.literal(true, {
-      errorMap: () => ({ message: errorMessage.terms_check })
-    }),
+    sns: z.string().array().nonempty(errorMessage.sns_empty),
     reply: z.enum(['yes', 'no'], {
       errorMap: () => ({ message: errorMessage.reply_empty })
     }),

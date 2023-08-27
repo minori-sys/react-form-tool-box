@@ -5,18 +5,28 @@ import { Input } from './Input';
 import { Select } from './Select';
 import { Check } from './Check';
 import { Radio } from './Radio';
-import { area, reply } from '../data/data';
+import { area, reply, sns } from '../data/data';
 import { Textarea } from './Textarea';
 
 export function Form() {
   const methods = useForm<Schema>({
     mode: 'onBlur',
-    resolver: zodResolver(schema)
+    resolver: zodResolver(schema),
+    defaultValues: {
+      name: '',
+      email: '',
+      emailConfirm: '',
+      sns: [],
+      reply: 'no',
+      message: ''
+    }
   });
   const onSubmit: SubmitHandler<Schema> = (data) => {
     alert(JSON.stringify(data));
     methods.reset();
   };
+
+  console.log('methods', methods.formState.errors);
 
   return (
     <FormProvider {...methods}>
@@ -29,10 +39,10 @@ export function Form() {
         <Input name="emailConfirm" />
         <h2>お住まいの地域</h2>
         <Select name="area" items={area} />
+        <h2>利用SNS</h2>
+        <Check name="sns" items={sns} />
         <h2>返信の有無</h2>
         <Radio name="reply" items={reply} />
-        <h2>利用規約</h2>
-        <Check name="terms" label="同意する" />
         <h2>メッセージ</h2>
         <Textarea name="message" />
         <input className="button" type="submit" />
