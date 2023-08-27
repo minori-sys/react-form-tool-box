@@ -17,7 +17,7 @@ export function Form() {
       email: '',
       emailConfirm: '',
       sns: [],
-      reply: 'no',
+      reply: '',
       message: ''
     }
   });

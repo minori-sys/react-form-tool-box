@@ -17,9 +17,7 @@ export const schema = z
       .min(1, errorMessage.area_empty)
       .transform((v) => Number(v)),
     sns: z.string().array().nonempty(errorMessage.sns_empty),
-    reply: z.enum(['yes', 'no'], {
-      errorMap: () => ({ message: errorMessage.reply_empty })
-    }),
+    reply: z.string().min(1, { message: errorMessage.reply_empty }),
     message: z.string().nonempty(errorMessage.message_empty)
   })
   .superRefine(({ email, emailConfirm }, ctx) => {
