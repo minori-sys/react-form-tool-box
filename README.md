@@ -8,6 +8,9 @@
 
 **あくまで個人的なので、「最強」というのは、ネタでお願いします。。**
 
+### zenn記事
+https://zenn.dev/minori_sys/articles/686fa08e702510
+
 ---
 
 ### `React` × `Typescript` × `React Hook Form` × `Zod`
